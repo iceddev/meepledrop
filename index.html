@@ -9,54 +9,34 @@ http://azprogrammer.com
     <meta charset="utf-8">
     <title>Meeple Drop</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <script src="Box2d.min.js"></script>
-    <!--<script>
-      var dojoConfig = {
-        baseUrl: '/',
-        packages: [
-          { name: 'dojo', location: 'libs/dojo' },
-          { name: 'dcl', location: 'libs/dcl', main: 'dcl' },
-          { name: 'frozen', location: 'libs/frozen/src' }
-        ]
-      }
-    </script>
-    <script src="libs/dojo/dojo.js"></script>-->
-    <script src="frozen.js"></script>
-    <script src="game.js"></script>
+    <script src="deps/Box2d.min.js"></script>
+    <script src="deps/frozen/dist/frozen.js"></script>
+    <script src="src/game.js"></script>
     <style>
       body {
-        -webkit-transform: translateZ(0);
-        background-color: #000;
-        color: #FFF;
-        margin-left: 0;
-        margin-right: 0;
-        margin-top: 10px;
+        background-color: #222;
+        color: #fff;
       }
+
+      a {
+        color: #10B7FB;
+      }
+
+      #status {
+        text-align: center;
+      }
+
       #gameArea {
-        position: absolute;
-        vertical-align: center;
-      }
-      #fullContainer{
-        margin: 0;
-        /*text-align: center;*/
-        width: 100%;
-        height: 100%;
-      }
-      #statsPanel {
-        position: absolute;
-        width: 90%;
-        height: 8%;
-        bottom: 0;
-        opacity: 0.8;
+        margin: 0 auto;
       }
     </style>
   </head>
   <body>
-    <div id="fullContainer">
     <div id="gameArea">
       <canvas id="canvas" width="400" height="580" ></canvas>
-      <div id="status">Created by <a href="http://twitter.com/monteslu" target="_blank">@monteslu</a> using <a href="https://github.com/iceddev/frozen" target="_blank">FrozenJS</a> <span id="output"></span><div>
-    </div>
+      <div id="status">
+        By <a href="http://twitter.com/monteslu" target="_blank">@monteslu</a> using <a href="https://github.com/iceddev/frozen" target="_blank">FrozenJS</a>
+      <div>
     </div>
   </body>
 </html>

@@ -1,0 +1,19 @@
+{
+  "name": "meepledrop",
+  "version": "0.1.0",
+  "devDependencies": {
+    "grunt-dojo": "~0.1.1",
+    "grunt-contrib-copy": "~0.3.2",
+    "volo": "~0.2.6"
+  },
+  "volo": {
+    "baseUrl": "deps",
+    "dependencies": {
+      "Box2d.min": "https://box2dweb.googlecode.com/svn/trunk/Box2d.min.js",
+      "frozen": "github:iceddev/frozen/csp_0.2.0",
+      "dojo": "github:phated/dojo/1.8.3csp",
+      "util": "github:dojo/util/1.8.3",
+      "dcl": "github:uhop/dcl/1.0.2"
+    }
+  }
+}
